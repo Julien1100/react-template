@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: lightblue;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.card:nth-child(8) {
+  background: lightsalmon;
+}
+
+.name {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.description {
+  font-size: 1.15em;
+  margin: 1em 0 1em 0;
+}
+
+.sub-info {
+  /* background-color: #fff; */
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  text-align: center;
+}
