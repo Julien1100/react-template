@@ -31,6 +31,10 @@
 }
 
 .card:nth-child(8) {
+  /* background: lightsalmon; */
+}
+
+#highlight {
   background: lightsalmon;
 }
 
@@ -45,7 +49,6 @@
 }
 
 .sub-info {
-  /* background-color: #fff; */
   display: flex;
   justify-content: center;
   gap: 2em;

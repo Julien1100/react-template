@@ -83,28 +83,31 @@ function App() {
 
   return (
     <>
-      <div class="container">
+      <div className="container">
         {source.map((data) => (
-          <div class="card">
-            <p class="name bold">{data.nom}</p>
-            <p key={data.name} class="description">
+          <div
+            className="card"
+            id={data.nom.includes("Mécatronique") ? "highlight" : undefined}
+          >
+            <p className="name bold">{data.nom}</p>
+            <p key={data.nom} className="description">
               {data.description}
             </p>
-            <div class="sub-info">
-              <div class="study-duration">
-                <p class="bold">Durée d'étude</p>
+            <div className="sub-info">
+              <div className="study-duration">
+                <p className="bold">Durée d'étude</p>
                 {data.duree_d_etude.length ? (
                   <p>{data.duree_d_etude}</p>
                 ) : (
-                  <p class="italic">N/A</p>
+                  <p className="italic">N/A</p>
                 )}
               </div>
-              <div class="salary">
-                <p class="bold">Salaire</p>
+              <div className="salary">
+                <p className="bold">Salaire</p>
                 {data.salaire.length ? (
                   <p>{data.salaire}</p>
                 ) : (
-                  <p class="italic">N/A</p>
+                  <p className="italic">N/A</p>
                 )}
               </div>
             </div>
